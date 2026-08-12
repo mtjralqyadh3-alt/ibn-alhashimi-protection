@@ -1,23 +1,36 @@
 {
   "expo": {
     "name": "حماية ابن الهاشمي",
-    "slug": "himaya-ibn-alhashimi",
-    "version": "1.0.0",
+    "slug": "ibn-alhashimi-protection",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "package": "com.wkxkx.himayaibnalhashimi",
+      "package": "com.mtjralqyadh.ibnalhashimi.protection",
+      "versionCode": 2,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "MANAGE_EXTERNAL_STORAGE",
+        "QUERY_ALL_PACKAGES",
+        "READ_CONTACTS",
+        "POST_NOTIFICATIONS",
+        "FOREGROUND_SERVICE",
+        "RECEIVE_BOOT_COMPLETED",
+        "REQUEST_DELETE_PACKAGES"
+      ],
+      "enableProguardInReleaseBuilds": true,
+      "enableShrinkResourcesInReleaseBuilds": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -33,7 +46,7 @@
     "runtimeVersion": {
       "policy": "appVersion"
     },
-    "owner": "wkxkx",
-    "platforms": ["ios", "android", "web"]
+    "platforms": ["ios", "android", "web"],
+    "jsEngine": "hermes"
   }
 }
