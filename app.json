@@ -1,52 +1,60 @@
 {
   "expo": {
+    "owner": "wkxkx",
     "name": "حماية ابن الهاشمي",
     "slug": "ibn-alhashimi-protection",
     "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a84ff"
+    },
     "android": {
       "package": "com.mtjralqyadh.ibnalhashimi.protection",
       "versionCode": 2,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/foreground.png",
+        "backgroundColor": "#0a84ff"
       },
       "permissions": [
         "READ_MEDIA_IMAGES",
         "READ_MEDIA_VIDEO",
-        "READ_MEDIA_AUDIO",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "MANAGE_EXTERNAL_STORAGE",
-        "QUERY_ALL_PACKAGES",
         "READ_CONTACTS",
         "POST_NOTIFICATIONS",
-        "FOREGROUND_SERVICE",
-        "RECEIVE_BOOT_COMPLETED",
-        "REQUEST_DELETE_PACKAGES"
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "QUERY_ALL_PACKAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "للفحص الحقيقي للصور المكررة بموافقتك فقط",
+          "isAccessMediaLocationEnabled": true
+        }
       ],
-      "enableProguardInReleaseBuilds": true,
-      "enableShrinkResourcesInReleaseBuilds": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "1aa35707-68de-4d43-ae06-2c3e490b6452"
-      }
-    },
-    "updates": {
-      "url": "https://u.expo.dev/1aa35707-68de-4d43-ae06-2c3e490b6452"
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
-    "platforms": ["ios", "android", "web"],
-    "jsEngine": "hermes"
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "لفحص الأرقام المكررة على جهازك فقط"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#0a84ff"
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "لفتح الخزنة المشفرة"
+        }
+      ]
+    ]
   }
 }
