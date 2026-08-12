@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Agon Preview",
-    "slug": "agon-preview",
+    "name": "حماية ابن الهاشمي",
+    "slug": "himaya-ibn-alhashimi",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,20 +23,16 @@
     },
     "extra": {
       "eas": {
-        "projectId": "552f0665-e30d-4f11-9ea9-97bc22a22809"
+        "projectId": "1aa35707-68de-4d43-ae06-2c3e490b6452"
       }
     },
     "updates": {
-      "url": "https://u.expo.dev/552f0665-e30d-4f11-9ea9-97bc22a22809"
+      "url": "https://u.expo.dev/1aa35707-68de-4d43-ae06-2c3e490b6452"
     },
     "runtimeVersion": {
       "policy": "appVersion"
     },
-    "owner": "arcadalabs",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ]
+    "owner": "wkxkx",
+    "platforms": ["ios", "android", "web"]
   }
 }
